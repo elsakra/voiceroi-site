@@ -1,0 +1,303 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Book Your Free Demo - VoiceROI" description="Book your free Momentum Score™ Diagnostic and see exactly where the Human Handbrake™ is costing your business money.">
+  <Header />
+  
+  <main class="pt-20">
+    <!-- Hero Section -->
+    <section class="section-padding bg-gradient-to-br from-lime-400 to-lime-500">
+      <div class="container-custom">
+        <div class="max-w-4xl mx-auto text-center animate-on-scroll">
+          <h1 class="text-5xl md:text-6xl font-black text-black mb-6">
+            Book Your Free
+            <span class="text-white">Demo</span>
+          </h1>
+          <p class="text-xl text-black/80 mb-8 leading-relaxed">
+            Get your Momentum Score™ Diagnostic and discover exactly where the Human Handbrake™ is costing you money. This 2-hour strategic consultation could be worth millions to your business.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
+            <div class="bg-black/10 rounded-xl p-4">
+              <div class="text-2xl font-black text-black mb-2">5 Min</div>
+              <p class="text-black/70 text-sm">Quick Assessment</p>
+            </div>
+            <div class="bg-black/10 rounded-xl p-4">
+              <div class="text-2xl font-black text-black mb-2">2 Hours</div>
+              <p class="text-black/70 text-sm">Strategic Consultation</p>
+            </div>
+            <div class="bg-black/10 rounded-xl p-4">
+              <div class="text-2xl font-black text-black mb-2">$0</div>
+              <p class="text-black/70 text-sm">Completely Free</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Demo Form Section -->
+    <section class="section-padding bg-white">
+      <div class="container-custom">
+        <div class="max-w-3xl mx-auto">
+          <div class="animate-on-scroll bg-gray-50 rounded-3xl p-8 md:p-12">
+            <div class="text-center mb-8">
+              <h2 class="text-3xl font-black text-black mb-4">
+                Schedule Your Momentum Score™ Diagnostic
+              </h2>
+              <p class="text-gray-600">
+                Fill out this form and we'll contact you within 5 seconds to schedule your consultation.
+              </p>
+            </div>
+            
+            <form class="space-y-6" action="#" method="POST">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label for="firstName" class="block text-sm font-semibold text-black mb-2">First Name *</label>
+                  <input 
+                    type="text" 
+                    id="firstName" 
+                    name="firstName" 
+                    required
+                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-lime-400 focus:ring-2 focus:ring-lime-400/20 outline-none transition-all"
+                  />
+                </div>
+                <div>
+                  <label for="lastName" class="block text-sm font-semibold text-black mb-2">Last Name *</label>
+                  <input 
+                    type="text" 
+                    id="lastName" 
+                    name="lastName" 
+                    required
+                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-lime-400 focus:ring-2 focus:ring-lime-400/20 outline-none transition-all"
+                  />
+                </div>
+              </div>
+              
+              <div>
+                <label for="email" class="block text-sm font-semibold text-black mb-2">Business Email *</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  required
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-lime-400 focus:ring-2 focus:ring-lime-400/20 outline-none transition-all"
+                />
+              </div>
+              
+              <div>
+                <label for="phone" class="block text-sm font-semibold text-black mb-2">Phone Number *</label>
+                <input 
+                  type="tel" 
+                  id="phone" 
+                  name="phone" 
+                  required
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-lime-400 focus:ring-2 focus:ring-lime-400/20 outline-none transition-all"
+                  placeholder="We'll call you within 5 seconds"
+                />
+              </div>
+              
+              <div>
+                <label for="company" class="block text-sm font-semibold text-black mb-2">Company Name *</label>
+                <input 
+                  type="text" 
+                  id="company" 
+                  name="company" 
+                  required
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-lime-400 focus:ring-2 focus:ring-lime-400/20 outline-none transition-all"
+                />
+              </div>
+              
+              <div>
+                <label for="industry" class="block text-sm font-semibold text-black mb-2">Industry *</label>
+                <select 
+                  id="industry" 
+                  name="industry" 
+                  required
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-lime-400 focus:ring-2 focus:ring-lime-400/20 outline-none transition-all"
+                >
+                  <option value="">Select your industry</option>
+                  <option value="construction">Construction</option>
+                  <option value="legal">Legal Services</option>
+                  <option value="medical">Medical/Healthcare</option>
+                  <option value="realestate">Real Estate</option>
+                  <option value="hvac">HVAC</option>
+                  <option value="automotive">Automotive</option>
+                  <option value="plumbing">Plumbing</option>
+                  <option value="electrical">Electrical</option>
+                  <option value="roofing">Roofing</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              
+              <div>
+                <label for="revenue" class="block text-sm font-semibold text-black mb-2">Annual Revenue *</label>
+                <select 
+                  id="revenue" 
+                  name="revenue" 
+                  required
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-lime-400 focus:ring-2 focus:ring-lime-400/20 outline-none transition-all"
+                >
+                  <option value="">Select revenue range</option>
+                  <option value="under500k">Under $500K</option>
+                  <option value="500k-1m">$500K - $1M</option>
+                  <option value="1m-5m">$1M - $5M</option>
+                  <option value="5m-10m">$5M - $10M</option>
+                  <option value="over10m">Over $10M</option>
+                </select>
+              </div>
+              
+              <div>
+                <label for="employees" class="block text-sm font-semibold text-black mb-2">Number of Employees</label>
+                <select 
+                  id="employees" 
+                  name="employees" 
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-lime-400 focus:ring-2 focus:ring-lime-400/20 outline-none transition-all"
+                >
+                  <option value="">Select team size</option>
+                  <option value="1-5">1-5 employees</option>
+                  <option value="6-20">6-20 employees</option>
+                  <option value="21-50">21-50 employees</option>
+                  <option value="51-100">51-100 employees</option>
+                  <option value="over100">Over 100 employees</option>
+                </select>
+              </div>
+              
+              <div>
+                <label for="challenge" class="block text-sm font-semibold text-black mb-2">What's your biggest challenge? *</label>
+                <textarea 
+                  id="challenge" 
+                  name="challenge" 
+                  rows="4"
+                  required
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-lime-400 focus:ring-2 focus:ring-lime-400/20 outline-none transition-all resize-none"
+                  placeholder="Tell us about missed calls, delayed responses, or any revenue leaks you're experiencing..."
+                ></textarea>
+              </div>
+              
+              <div>
+                <label for="urgency" class="block text-sm font-semibold text-black mb-2">How urgent is solving this problem? *</label>
+                <select 
+                  id="urgency" 
+                  name="urgency" 
+                  required
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-lime-400 focus:ring-2 focus:ring-lime-400/20 outline-none transition-all"
+                >
+                  <option value="">Select urgency level</option>
+                  <option value="critical">Critical - Losing money daily</option>
+                  <option value="high">High - Need solution within 30 days</option>
+                  <option value="medium">Medium - Planning for next quarter</option>
+                  <option value="low">Low - Just exploring options</option>
+                </select>
+              </div>
+              
+              <div class="bg-lime-400/10 rounded-xl p-6">
+                <div class="flex items-start space-x-3">
+                  <input 
+                    type="checkbox" 
+                    id="consent" 
+                    name="consent" 
+                    required
+                    class="mt-1 w-5 h-5 text-lime-400 border-gray-300 rounded focus:ring-lime-400"
+                  />
+                  <label for="consent" class="text-sm text-gray-700">
+                    I agree to receive communications from VoiceROI about my Momentum Score™ Diagnostic and understand that I can unsubscribe at any time. I also agree to the 
+                    <a href="/privacy-policy" class="text-lime-600 hover:underline">Privacy Policy</a> and 
+                    <a href="/terms-of-service" class="text-lime-600 hover:underline">Terms of Service</a>.
+                  </label>
+                </div>
+              </div>
+              
+              <button type="submit" class="btn-primary w-full text-center py-4 text-lg font-bold">
+                Book My Free Demo Now
+              </button>
+              
+              <div class="text-center">
+                <p class="text-sm text-gray-500">
+                  🔒 Your information is secure and will never be shared with third parties.
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- What to Expect Section -->
+    <section class="section-padding bg-black text-white">
+      <div class="container-custom">
+        <div class="max-w-4xl mx-auto">
+          <div class="text-center mb-12 animate-on-scroll">
+            <h2 class="text-4xl font-black mb-6">
+              What to Expect from Your
+              <span class="text-lime-400">Demo</span>
+            </h2>
+          </div>
+          
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="animate-on-scroll text-center">
+              <div class="w-20 h-20 bg-lime-400 rounded-full flex items-center justify-center mx-auto mb-6">
+                <span class="text-2xl font-black text-black">1</span>
+              </div>
+              <h3 class="text-xl font-bold mb-4">Momentum Score™ Analysis</h3>
+              <p class="text-gray-300">
+                We'll analyze your current revenue leaks and quantify exactly how much the Human Handbrake™ is costing you.
+              </p>
+            </div>
+            
+            <div class="animate-on-scroll text-center">
+              <div class="w-20 h-20 bg-lime-400 rounded-full flex items-center justify-center mx-auto mb-6">
+                <span class="text-2xl font-black text-black">2</span>
+              </div>
+              <h3 class="text-xl font-bold mb-4">Custom Solution Design</h3>
+              <p class="text-gray-300">
+                See exactly how our AI Digital Workers would integrate with your business and capture every opportunity.
+              </p>
+            </div>
+            
+            <div class="animate-on-scroll text-center">
+              <div class="w-20 h-20 bg-lime-400 rounded-full flex items-center justify-center mx-auto mb-6">
+                <span class="text-2xl font-black text-black">3</span>
+              </div>
+              <h3 class="text-xl font-bold mb-4">ROI Projection</h3>
+              <p class="text-gray-300">
+                Get a detailed projection of your revenue increase and see why our clients average 391% conversion improvement.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Guarantee Section -->
+    <section class="section-padding bg-lime-400">
+      <div class="container-custom">
+        <div class="text-center animate-on-scroll">
+          <h2 class="text-4xl font-black text-black mb-6">
+            Our Iron-Clad Guarantee
+          </h2>
+          <p class="text-xl text-black/80 mb-8 max-w-3xl mx-auto">
+            If we don't deliver measurable results within 6 months, we'll continue working for free until we do. Still not satisfied? We'll refund your entire investment.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            <div class="bg-black/10 rounded-xl p-6">
+              <div class="text-2xl font-black text-black mb-2">6 Months</div>
+              <p class="text-black/70">Results Guarantee</p>
+            </div>
+            <div class="bg-black/10 rounded-xl p-6">
+              <div class="text-2xl font-black text-black mb-2">100%</div>
+              <p class="text-black/70">Money Back</p>
+            </div>
+            <div class="bg-black/10 rounded-xl p-6">
+              <div class="text-2xl font-black text-black mb-2">0</div>
+              <p class="text-black/70">Risk to You</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <Footer />
+</Layout>

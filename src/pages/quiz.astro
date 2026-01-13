@@ -1,0 +1,302 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Momentum Score™ Quiz - VoiceROI" description="Take our quick quiz to discover your Momentum Score™ and see exactly where the Human Handbrake™ is costing your business money.">
+  <Header />
+  
+  <main class="pt-20">
+    <!-- Hero Section -->
+    <section class="section-padding bg-gradient-to-br from-gray-50 to-white">
+      <div class="container-custom">
+        <div class="max-w-4xl mx-auto text-center animate-on-scroll">
+          <h1 class="text-5xl md:text-6xl font-black text-black mb-6">
+            Discover Your
+            <span class="text-lime-400">Momentum Score™</span>
+          </h1>
+          <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+            Take this 2-minute assessment to see exactly where the Human Handbrake™ is costing your business money.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
+            <div class="bg-lime-400/10 rounded-xl p-4">
+              <div class="text-2xl font-black text-black mb-2">2 Min</div>
+              <p class="text-gray-600 text-sm">Quick Assessment</p>
+            </div>
+            <div class="bg-lime-400/10 rounded-xl p-4">
+              <div class="text-2xl font-black text-black mb-2">Free</div>
+              <p class="text-gray-600 text-sm">No Cost</p>
+            </div>
+            <div class="bg-lime-400/10 rounded-xl p-4">
+              <div class="text-2xl font-black text-black mb-2">Instant</div>
+              <p class="text-gray-600 text-sm">Immediate Results</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Quiz Section -->
+    <section class="section-padding bg-white">
+      <div class="container-custom">
+        <div class="max-w-3xl mx-auto">
+          <div class="animate-on-scroll bg-gray-50 rounded-3xl p-8 md:p-12">
+            <div class="text-center mb-8">
+              <h2 class="text-3xl font-black text-black mb-4">
+                Momentum Score™ Assessment
+              </h2>
+              <p class="text-gray-600">
+                Answer these questions honestly to get your personalized score and revenue leak analysis.
+              </p>
+            </div>
+            
+            <form id="momentum-quiz" class="space-y-8">
+              <!-- Question 1 -->
+              <div class="quiz-question">
+                <h3 class="text-xl font-bold text-black mb-4">
+                  1. How many business calls do you estimate go unanswered each week?
+                </h3>
+                <div class="space-y-3">
+                  <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q1" value="0" class="w-5 h-5 text-lime-400" />
+                    <span class="text-gray-700">0-5 calls (We answer everything)</span>
+                  </label>
+                  <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q1" value="25" class="w-5 h-5 text-lime-400" />
+                    <span class="text-gray-700">6-15 calls (Occasional misses)</span>
+                  </label>
+                  <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q1" value="50" class="w-5 h-5 text-lime-400" />
+                    <span class="text-gray-700">16-30 calls (Regular misses)</span>
+                  </label>
+                  <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q1" value="75" class="w-5 h-5 text-lime-400" />
+                    <span class="text-gray-700">31+ calls (We miss a lot)</span>
+                  </label>
+                </div>
+              </div>
+              
+              <!-- Question 2 -->
+              <div class="quiz-question">
+                <h3 class="text-xl font-bold text-black mb-4">
+                  2. What's your average response time to new leads?
+                </h3>
+                <div class="space-y-3">
+                  <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q2" value="0" class="w-5 h-5 text-lime-400" />
+                    <span class="text-gray-700">Under 5 minutes</span>
+                  </label>
+                  <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q2" value="25" class="w-5 h-5 text-lime-400" />
+                    <span class="text-gray-700">5-30 minutes</span>
+                  </label>
+                  <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q2" value="50" class="w-5 h-5 text-lime-400" />
+                    <span class="text-gray-700">1-4 hours</span>
+                  </label>
+                  <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q2" value="75" class="w-5 h-5 text-lime-400" />
+                    <span class="text-gray-700">4+ hours or next day</span>
+                  </label>
+                </div>
+              </div>
+              
+              <!-- Question 3 -->
+              <div class="quiz-question">
+                <h3 class="text-xl font-bold text-black mb-4">
+                  3. How often do you lose potential customers to competitors due to delayed responses?
+                </h3>
+                <div class="space-y-3">
+                  <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q3" value="0" class="w-5 h-5 text-lime-400" />
+                    <span class="text-gray-700">Never - we're always first</span>
+                  </label>
+                  <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q3" value="25" class="w-5 h-5 text-lime-400" />
+                    <span class="text-gray-700">Rarely - maybe once a month</span>
+                  </label>
+                  <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q3" value="50" class="w-5 h-5 text-lime-400" />
+                    <span class="text-gray-700">Sometimes - few times a month</span>
+                  </label>
+                  <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q3" value="75" class="w-5 h-5 text-lime-400" />
+                    <span class="text-gray-700">Often - weekly or more</span>
+                  </label>
+                </div>
+              </div>
+              
+              <!-- Question 4 -->
+              <div class="quiz-question">
+                <h3 class="text-xl font-bold text-black mb-4">
+                  4. What happens to calls that come in after business hours?
+                </h3>
+                <div class="space-y-3">
+                  <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q4" value="0" class="w-5 h-5 text-lime-400" />
+                    <span class="text-gray-700">Answered by our 24/7 team</span>
+                  </label>
+                  <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q4" value="25" class="w-5 h-5 text-lime-400" />
+                    <span class="text-gray-700">Forwarded to mobile, usually answered</span>
+                  </label>
+                  <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q4" value="50" class="w-5 h-5 text-lime-400" />
+                    <span class="text-gray-700">Go to voicemail, returned next day</span>
+                  </label>
+                  <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q4" value="75" class="w-5 h-5 text-lime-400" />
+                    <span class="text-gray-700">Go to voicemail, may not be returned</span>
+                  </label>
+                </div>
+              </div>
+              
+              <!-- Question 5 -->
+              <div class="quiz-question">
+                <h3 class="text-xl font-bold text-black mb-4">
+                  5. How consistent is your follow-up process with leads?
+                </h3>
+                <div class="space-y-3">
+                  <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q5" value="0" class="w-5 h-5 text-lime-400" />
+                    <span class="text-gray-700">Automated and perfect every time</span>
+                  </label>
+                  <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q5" value="25" class="w-5 h-5 text-lime-400" />
+                    <span class="text-gray-700">Very consistent with good systems</span>
+                  </label>
+                  <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q5" value="50" class="w-5 h-5 text-lime-400" />
+                    <span class="text-gray-700">Somewhat consistent, depends on workload</span>
+                  </label>
+                  <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="q5" value="75" class="w-5 h-5 text-lime-400" />
+                    <span class="text-gray-700">Inconsistent, leads often fall through cracks</span>
+                  </label>
+                </div>
+              </div>
+              
+              <!-- Contact Info -->
+              <div class="border-t border-gray-300 pt-8">
+                <h3 class="text-xl font-bold text-black mb-4">Get Your Results</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <label for="name" class="block text-sm font-semibold text-black mb-2">Full Name *</label>
+                    <input 
+                      type="text" 
+                      id="name" 
+                      name="name" 
+                      required
+                      class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-lime-400 focus:ring-2 focus:ring-lime-400/20 outline-none transition-all"
+                    />
+                  </div>
+                  <div>
+                    <label for="email" class="block text-sm font-semibold text-black mb-2">Email Address *</label>
+                    <input 
+                      type="email" 
+                      id="email" 
+                      name="email" 
+                      required
+                      class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-lime-400 focus:ring-2 focus:ring-lime-400/20 outline-none transition-all"
+                    />
+                  </div>
+                </div>
+                <div class="mt-6">
+                  <label for="phone" class="block text-sm font-semibold text-black mb-2">Phone Number *</label>
+                  <input 
+                    type="tel" 
+                    id="phone" 
+                    name="phone" 
+                    required
+                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-lime-400 focus:ring-2 focus:ring-lime-400/20 outline-none transition-all"
+                    placeholder="We'll call with your results"
+                  />
+                </div>
+              </div>
+              
+              <button type="submit" class="btn-primary w-full text-center py-4 text-lg font-bold">
+                Get My Momentum Score™
+              </button>
+            </form>
+            
+            <!-- Results Section (Hidden Initially) -->
+            <div id="quiz-results" class="hidden mt-8">
+              <div class="bg-black rounded-2xl p-8 text-white text-center">
+                <h3 class="text-2xl font-bold text-lime-400 mb-4">Your Momentum Score™</h3>
+                <div class="text-6xl font-black text-lime-400 mb-4" id="score-display">0</div>
+                <p class="text-xl mb-6" id="score-description"></p>
+                <div class="bg-gray-900 rounded-xl p-6 mb-6">
+                  <h4 class="text-lg font-bold text-lime-400 mb-3">Estimated Annual Revenue Loss</h4>
+                  <div class="text-3xl font-black text-white" id="revenue-loss">$0</div>
+                </div>
+                <a href="/demo" class="btn-primary inline-block">
+                  Book Your Free Demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <Footer />
+</Layout>
+
+<script>
+  document.getElementById('momentum-quiz')?.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Calculate score
+    const formData = new FormData(this as HTMLFormElement);
+    let totalScore = 0;
+    let answeredQuestions = 0;
+    
+    for (let i = 1; i <= 5; i++) {
+      const answer = formData.get(`q${i}`);
+      if (answer) {
+        totalScore += parseInt(answer as string);
+        answeredQuestions++;
+      }
+    }
+    
+    if (answeredQuestions < 5) {
+      alert('Please answer all questions to get your Momentum Score™');
+      return;
+    }
+    
+    const averageScore = Math.round(totalScore / 5);
+    const scoreElement = document.getElementById('score-display');
+    const descriptionElement = document.getElementById('score-description');
+    const revenueLossElement = document.getElementById('revenue-loss');
+    const resultsSection = document.getElementById('quiz-results');
+    
+    if (scoreElement && descriptionElement && revenueLossElement && resultsSection) {
+      scoreElement.textContent = (100 - averageScore).toString();
+      
+      let description = '';
+      let revenueLoss = 0;
+      
+      if (averageScore <= 25) {
+        description = 'Excellent! You have minimal Human Handbrake™ friction.';
+        revenueLoss = 50000;
+      } else if (averageScore <= 50) {
+        description = 'Good, but there\'s room for improvement in your revenue capture.';
+        revenueLoss = 150000;
+      } else if (averageScore <= 75) {
+        description = 'Significant Human Handbrake™ friction is limiting your growth.';
+        revenueLoss = 300000;
+      } else {
+        description = 'Critical! The Human Handbrake™ is severely limiting your revenue.';
+        revenueLoss = 500000;
+      }
+      
+      descriptionElement.textContent = description;
+      revenueLossElement.textContent = `$${revenueLoss.toLocaleString()}`;
+      
+      resultsSection.classList.remove('hidden');
+      resultsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+</script>

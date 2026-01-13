@@ -1,80 +1,84 @@
 ---
 ---
 
-<section class="relative min-h-screen flex items-center justify-center overflow-hidden">
-  <!-- Background -->
-  <div class="absolute inset-0 bg-gradient-to-br from-primary-900 via-primary-800 to-secondary-900"></div>
-  
+<section class="relative min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 flex items-center overflow-hidden">
   <!-- Background Pattern -->
-  <div class="absolute inset-0 opacity-10">
-    <div class="absolute inset-0" style="background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.15) 1px, transparent 0); background-size: 20px 20px;"></div>
-  </div>
-
-  <!-- Content -->
-  <div class="relative z-10 container-custom text-center">
-    <div class="max-w-4xl mx-auto">
-      <!-- Main Headline -->
-      <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 animate-on-scroll">
-        Never Miss 
-        <span class="text-gradient bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
-          Revenue
-        </span> 
-        Again
-      </h1>
-      
-      <!-- Subheadline -->
-      <p class="text-xl md:text-2xl text-gray-200 mb-8 animate-on-scroll max-w-3xl mx-auto">
-        Stop Losing Money to the Human Handbrake™. Our AI workforce eliminates the friction that's capping your growth.
-      </p>
-      
-      <!-- Stats Row -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 animate-on-scroll">
-        <div class="text-center">
-          <div class="text-4xl md:text-5xl font-bold text-yellow-400 mb-2">
-            <span class="stat-number">391</span>%
-          </div>
-          <div class="text-gray-300 text-sm md:text-base">Conversion Increase</div>
-        </div>
-        <div class="text-center">
-          <div class="text-4xl md:text-5xl font-bold text-green-400 mb-2">
-            <span class="stat-number">24</span>/7
-          </div>
-          <div class="text-gray-300 text-sm md:text-base">Revenue Operations</div>
-        </div>
-        <div class="text-center">
-          <div class="text-4xl md:text-5xl font-bold text-blue-400 mb-2">
-            <span class="stat-number">5</span>s
-          </div>
-          <div class="text-gray-300 text-sm md:text-base">Response Time</div>
-        </div>
-      </div>
-      
-      <!-- CTA Buttons -->
-      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center animate-on-scroll">
-        <a href="/voiceroi-dicoverycall" class="btn-primary text-lg px-8 py-4">
-          Book A Free Demo
-        </a>
-        <a href="#quiz" class="btn-secondary text-lg px-8 py-4">
-          Start Your Quiz!
-        </a>
-      </div>
-      
-      <!-- Trust Indicator -->
-      <p class="text-gray-400 text-sm mt-8 animate-on-scroll">
-        Pricing starts as low as $497 per month • Iron-clad 6-month guarantee
-      </p>
-    </div>
+  <div class="absolute inset-0 opacity-5">
+    <div class="absolute inset-0" style="background-image: radial-gradient(circle at 1px 1px, rgba(0,0,0,0.15) 1px, transparent 0); background-size: 20px 20px;"></div>
   </div>
   
   <!-- Floating Elements -->
-  <div class="absolute top-20 left-10 w-20 h-20 bg-primary-400 rounded-full opacity-20 animate-float"></div>
-  <div class="absolute bottom-20 right-10 w-16 h-16 bg-yellow-400 rounded-full opacity-20 animate-float" style="animation-delay: -2s;"></div>
-  <div class="absolute top-1/2 left-20 w-12 h-12 bg-green-400 rounded-full opacity-20 animate-float" style="animation-delay: -4s;"></div>
+  <div class="absolute top-20 left-10 w-20 h-20 bg-lime-400/20 rounded-full blur-xl float-animation"></div>
+  <div class="absolute bottom-20 right-10 w-32 h-32 bg-lime-400/10 rounded-full blur-2xl float-animation"></div>
   
-  <!-- Scroll Indicator -->
-  <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-    </svg>
+  <div class="container-custom relative z-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <!-- Content -->
+      <div class="animate-on-scroll">
+        <div class="mb-6">
+          <span class="inline-block bg-lime-400 text-black px-4 py-2 rounded-full text-sm font-semibold mb-4">
+            🚀 Results-as-a-Service™
+          </span>
+        </div>
+        
+        <h1 class="hero-text text-black mb-6">
+          Never Miss
+          <span class="text-lime-400">Revenue</span>
+          Again
+        </h1>
+        
+        <p class="text-xl text-gray-600 mb-8 max-w-lg leading-relaxed">
+          Stop losing money to the Human Handbrake™. Our AI workforce eliminates the friction that's capping your growth.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 mb-12">
+          <a href="/demo" class="btn-primary text-center">
+            Book A Free Demo
+          </a>
+          <a href="/quiz" class="btn-secondary text-center">
+            Start Your Quiz!
+          </a>
+        </div>
+        
+        <!-- Stats -->
+        <div class="grid grid-cols-2 gap-6">
+          <div class="text-center">
+            <div class="text-4xl font-black text-lime-400 mb-2">
+              <span class="stat-number">391</span>%
+            </div>
+            <p class="text-sm text-gray-600 font-medium">Conversion Increase</p>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl font-black text-black mb-2">
+              <span class="stat-number">24</span>/7
+            </div>
+            <p class="text-sm text-gray-600 font-medium">Revenue Operations</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Visual -->
+      <div class="animate-on-scroll lg:justify-self-end">
+        <div class="relative">
+          <img 
+            src="https://res.cloudinary.com/dil14r8je/image/upload/v1768292445/auto-site-builder/VoiceROI/image_0.png" 
+            alt="VoiceROI AI Digital Workers Dashboard"
+            class="w-full max-w-lg rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-500"
+            loading="eager"
+          />
+          
+          <!-- Floating Stats Cards -->
+          <div class="absolute -top-6 -left-6 bg-white rounded-xl shadow-lg p-4 float-animation">
+            <div class="text-2xl font-bold text-lime-400">5s</div>
+            <div class="text-xs text-gray-600">Response Time</div>
+          </div>
+          
+          <div class="absolute -bottom-6 -right-6 bg-white rounded-xl shadow-lg p-4 float-animation">
+            <div class="text-2xl font-bold text-black">100%</div>
+            <div class="text-xs text-gray-600">Uptime</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
