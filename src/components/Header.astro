@@ -1,0 +1,75 @@
+---
+---
+
+<header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
+  <nav class="container-custom">
+    <div class="flex items-center justify-between h-16 lg:h-20">
+      <!-- Logo -->
+      <div class="flex-shrink-0">
+        <a href="/" class="flex items-center space-x-2 group">
+          <img 
+            src="https://res.cloudinary.com/dil14r8je/image/upload/v1768292445/auto-site-builder/VoiceROI/image_0.png" 
+            alt="VoiceROI Logo" 
+            class="h-8 w-auto transition-transform duration-300 group-hover:scale-105"
+          />
+          <span class="text-xl font-bold text-white group-hover:text-primary-200 transition-colors duration-300">VoiceROI</span>
+        </a>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden md:block">
+        <div class="ml-10 flex items-baseline space-x-8">
+          <a href="/" class="text-white hover:text-primary-200 px-3 py-2 text-sm font-medium transition-colors duration-300">Home</a>
+          <a href="/casestudy1" class="text-white hover:text-primary-200 px-3 py-2 text-sm font-medium transition-colors duration-300">Case Study I</a>
+          <a href="/casestudy2" class="text-white hover:text-primary-200 px-3 py-2 text-sm font-medium transition-colors duration-300">Case Study II</a>
+          <a href="/testimonials" class="text-white hover:text-primary-200 px-3 py-2 text-sm font-medium transition-colors duration-300">Testimonials</a>
+        </div>
+      </div>
+
+      <!-- CTA Button -->
+      <div class="hidden md:block">
+        <a href="/voiceroi-dicoverycall" class="btn-primary">
+          Book A Free Demo
+        </a>
+      </div>
+
+      <!-- Mobile menu button -->
+      <div class="md:hidden">
+        <button 
+          type="button" 
+          class="mobile-menu-button text-white hover:text-primary-200 focus:outline-none focus:text-primary-200 transition-colors duration-300"
+          aria-controls="mobile-menu" 
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu hidden md:hidden">
+      <div class="px-2 pt-2 pb-3 space-y-1 bg-white/95 backdrop-blur-md rounded-lg mt-2 shadow-lg">
+        <a href="/" class="text-gray-900 hover:text-primary-600 block px-3 py-2 text-base font-medium transition-colors duration-300">Home</a>
+        <a href="/casestudy1" class="text-gray-900 hover:text-primary-600 block px-3 py-2 text-base font-medium transition-colors duration-300">Case Study I</a>
+        <a href="/casestudy2" class="text-gray-900 hover:text-primary-600 block px-3 py-2 text-base font-medium transition-colors duration-300">Case Study II</a>
+        <a href="/testimonials" class="text-gray-900 hover:text-primary-600 block px-3 py-2 text-base font-medium transition-colors duration-300">Testimonials</a>
+        <a href="/voiceroi-dicoverycall" class="btn-primary block text-center mt-4">Book A Free Demo</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<script>
+  // Mobile menu toggle
+  const mobileMenuButton = document.querySelector('.mobile-menu-button');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  
+  if (mobileMenuButton && mobileMenu) {
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  }
+</script>

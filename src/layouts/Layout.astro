@@ -1,0 +1,72 @@
+---
+import '../styles/global.css';
+
+export interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+  canonical?: string;
+}
+
+const {
+  title,
+  description = 'VoiceROI - AI Digital Workers for your organization. Automate calls, follow-ups, and scheduling. Never miss revenue again.',
+  image = 'https://res.cloudinary.com/dil14r8je/image/upload/v1768292445/auto-site-builder/VoiceROI/image_0.png',
+  canonical
+} = Astro.props;
+
+const canonicalURL = canonical || new URL(Astro.url.pathname, Astro.site);
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="canonical" href={canonicalURL} />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={image} />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalURL} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={image} />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "VoiceROI",
+        "description": "AI Digital Workers for your organization. Automate calls, follow-ups, and scheduling.",
+        "url": "https://voiceroi.com",
+        "logo": "https://res.cloudinary.com/dil14r8je/image/upload/v1768292445/auto-site-builder/VoiceROI/image_0.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+1-646-651-4547",
+          "contactType": "customer service",
+          "email": "Hello@voiceroi.com"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/company/voiceroi"
+        ]
+      }
+    </script>
+    
+    <title>{title}</title>
+  </head>
+  <body class="antialiased">
+    <slot />
+    <script src="../scripts/animations.ts"></script>
+  </body>
+</html>
